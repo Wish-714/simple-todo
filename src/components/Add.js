@@ -18,7 +18,7 @@ function Add() {
     } 
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center fixed bg-gray-100 shadow-lg shadow-gray-400/50 pb-8 pt-4 mt-28'>
         <form onSubmit={handleSubmit} className='flex w-screen'>
             <input
             className='w-screen bg-gray-200 shadow-lg text-gray-700 px-4 py-1 ml-8 mr-1 rounded-md'

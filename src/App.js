@@ -10,6 +10,7 @@ import {
  } from "firebase/firestore";
 import { db } from "./firebase";
 import React from 'react';
+import Add from './components/Add';
 
 
 function App() {
@@ -41,7 +42,8 @@ function App() {
   }
   return (
       <div className='overflow-x-hidden flex flex-col w-screen h-screen bg-gray-200'>
-        <div><Title/></div>       
+        <div><Title/></div>
+        <div className=''><Add/></div>
         <div className='mt-48 bg-gray-200'>
         {todos.map((todo) => (
             <Todo
