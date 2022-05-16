@@ -40,7 +40,7 @@ function App() {
     await deleteDoc(doc(db, 'todos', id));
   }
   return (
-      <div className='overflow-x-hidden flex flex-col relative w-screen m-0 h-screen bg-gray-200'>
+      <div className='overflow-x-hidden flex flex-col w-screen h-screen bg-gray-200'>
         <div><Title/></div>       
         <div className='mt-48 bg-gray-200'>
         {todos.map((todo) => (
@@ -53,7 +53,7 @@ function App() {
             />
           ))}
         </div>
-        <h1 className='text-gray-700 mt-24 mb-8 flex justify-center'>Todo-app v-1.0.alpha by-<span className='font-bold'>Wish 🌐</span></h1>
+        <h1 className='text-gray-700 text-sm mt-24 mb-8 flex justify-center'>Todo-app v-1.0.alpha by-<span className='font-bold'>Wish 🌐</span></h1>
       </div>
   );
 }
