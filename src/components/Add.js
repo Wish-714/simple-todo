@@ -27,8 +27,8 @@ function Add() {
             value={title}
             onChange={(i) => setTitle(i.target.value)}/>
             <button
-            className='bg-gray-500 text-white px-2 w-28 py-1 mr-8 ml-2 rounded-md hover:bg-gray-400'>
-            📌
+            className='bg-gray-500 text-white px-1 w-28 py-1 mr-8 ml-2 rounded-md hover:bg-gray-400'>
+            ⭕️
             </button>
         </form>
     </div>

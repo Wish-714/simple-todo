@@ -15,7 +15,7 @@ function Todo({todo,toggleComplete,handleDelete,handleEdit,}) {
     };
 
   return (
-    <div className='my-4 w-screen flex justify-center items-center'>
+    <form className='my-4 w-screen flex justify-center items-center'>
         <input
         style={{ textDecoration: todo.completed && "line-through" }}
         type="text"
@@ -33,7 +33,7 @@ function Todo({todo,toggleComplete,handleDelete,handleEdit,}) {
         className='bg-gray-500 text-white px-2 py-1 rounded-xl mx-1 hover:bg-gray-400'
         onClick={() => handleEdit(todo, newTitle)}
         >
-        ✏️
+        🔄
         </button>
         <button
         className='bg-red-500 text-white px-2 py-1 rounded-xl ml-1 mr-8 hover:bg-red-700'
@@ -41,7 +41,7 @@ function Todo({todo,toggleComplete,handleDelete,handleEdit,}) {
         >
         ✖️
         </button>
-    </div>
+    </form>
   )
 }
 
