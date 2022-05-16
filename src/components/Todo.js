@@ -27,19 +27,19 @@ function Todo({todo,toggleComplete,handleDelete,handleEdit,}) {
         className='bg-gray-500 text-white px-2 py-1 rounded-xl mx-1 hover:bg-gray-400'
         onClick={() => toggleComplete(todo)}
         >
-        Done
+        ☑️
         </button>
         <button
         className='bg-gray-500 text-white px-2 py-1 rounded-xl mx-1 hover:bg-gray-400'
         onClick={() => handleEdit(todo, newTitle)}
         >
-        Edit
+        ✏️
         </button>
         <button
         className='bg-red-500 text-white px-2 py-1 rounded-xl ml-1 mr-8 hover:bg-red-700'
         onClick={() => handleDelete(todo.id)}
         >
-        Delete
+        ✖️
         </button>
     </div>
   )
