@@ -15,7 +15,7 @@ function Todo({todo,toggleComplete,handleDelete,handleEdit,}) {
     };
 
   return (
-    <form className='my-4 flex justify-center'>
+    <div className='my-4 flex justify-center'>
         <input
         style={{ textDecoration: todo.completed && "line-through" }}
         type="text"
@@ -42,7 +42,7 @@ function Todo({todo,toggleComplete,handleDelete,handleEdit,}) {
         >
         ✖️
         </button>
-    </form>
+    </div>
   )
 }
 
